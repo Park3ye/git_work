@@ -1,0 +1,140 @@
+@charset "utf-8"; html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: overline;
+    color: #f2a;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #678;
+    font-weight: bold;
+}
+
+img {
+    border: 0;
+}
+
+header,
+section,
+footer,
+aside,
+article,
+nav,
+main,
+figure {
+    display: block;
+}
+
+/*common======================================*/
+
+.cloearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*IE용 클리어픽스*/
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+/*design=========================================*/
+
+#box {
+    width: 700px;
+    height: auto;
+    /*min-height: 100px;background-color: #ccc;*/
+    margin: 0 auto;
+}
+
+#headBox {
+    width: 100%;
+    height: 80px;
+    background-color: #0cb;
+padding: 15px 50px;box-sizing:border-box;}
+    
+h1{width: 100px; height: 50px;background-color: #fff;float: left;}
+    
+#gnb{width: 450px;height: 30px;margin-top: 20px;float: right;}
+#gnb>ul{width:100%; height: 100%;}
+#gnb>ul>li{width:100px; height: 30px; float: left; background-color: #fff;
+margin-right: 16.6px;}
+#gnb>ul>li.last{margin-right: 0;}
+
+#bannerBox {
+    widows: 100%;
+    height: 250px;
+}
+
+#bannerBox {
+    width: 100%;
+    height: 250px;
+    background-color: #ff3;
+}
+
+#sideBox {
+    width: 100%;
+    height: 35px;
+    background-color: #fa3;
+}
+
+#contentBox {
+    width: 100%;
+    height: auto;
+    background-color: #ff0;
+}
+#news{width: 50%; height: 300px; padding: 15px;box-sizing: border-box; background-color:#f77; float: left;}
+#news>ul{width: 100%;height: 100%;background-color: #fac;}
+#news>ul>li{width: 50%;height: 50%;float: left;background-color: #aa6;}
+
+#info{width: 50%; height: 300px; background-color:#77f; float: left;
+padding: 15px;box-sizing: border-box;}
+   #info>ul{width: 100%;height: 100%;}
+     #info>ul>li{width: 100%;height: 80px; margin-bottom: 10px; background-color: #fff;}
+        #info>ul>li.last{margin-bottom: 0;}
+
+
+#footBox {
+    width: 100%;
+    height: 80px;
+    background-color: #a25;
+}

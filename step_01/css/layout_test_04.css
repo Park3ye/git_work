@@ -1,0 +1,238 @@
+@charset "utf-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f2e;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img {
+    border: 0;
+}
+
+header,
+section,
+footer,
+aside,
+article,
+nav,
+main,
+figure {
+    display: block;
+}
+
+/* == common ========================================= */
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* == design ========================================= */
+
+#box {width: 978px;height: 1740px;margin: auto;}
+h1 {width: 125px;height: 125px;background-color: #fff;float: left;}
+.first_last_Box {width: 978px; height: 150px;
+    background-color: #fa8;}
+#headerBox_01 {padding: 15px;box-sizing: border-box}
+
+/*헤더박스_01*/
+
+#gnb_Box {width: 650px;height: 60px; background-color: #777;float: left;
+margin-top: 35px;margin-left: 30px;}
+
+/*헤더 가운데 메뉴박스 틀----------------*/
+
+#gnb_Box>ul {width: 100%;height: 100%;
+padding: 15px;box-sizing: border-box}
+#gnb_Box>ul>li{width: 80px;height: 30px;background-color: #fff; float: left;
+margin-right: 100px;}
+#gnb_Box>ul>li.last {margin-right: 0;}
+
+/*헤더 가운데 메뉴 1~4====================*/
+
+#sns_Box {width: 100px; height: 40px;float: right;}
+#sns_Box>ul {width: 100%;height: 100%;}
+#sns_Box>ul>li {width: 40px;height: 40px;
+background-color: #777;float: left;
+margin-right: 20px;}
+#sns_Box>ul>li.last {margin-right: 0;}
+
+/*헤더 상단 우측 fb, tw =============*/
+
+/*헤더 끝!!*/
+
+
+/*메인광고 5개 시작!*/
+#contentBox_02 {width: 978px; height: 200px;background-color:#aaa;padding-top: 20px;padding-left: 70px;box-sizing: border-box}
+
+#contentBox_02>ul {width: 100%;height: 100%;}
+#contentBox_02>ul>li {width: 150px;height: 150px;background-color: #fff;margin-right: 20px;float: left;}
+#contentBox_02>ul>li.last {margin-right: 0;}
+
+/*메인광고 5개 끝!*/
+
+/*3rd 박스 시작!----------------------*/
+#contentBox_03 {width: 978px; height: 300px;background-color:#888;}
+#product_Detail {width: 175px;height: 300px;background-color: #fa8;float: left;
+padding: 38px;box-sizing: border-box}
+#space_A {width: 100px;height: 100px;background-color: #fff;}
+#dia_B {width: 100%;height: 100%;background-color: #999;
+}
+#dia_B>ul{width: 80%;height: 100%; ;float: right;
+padding: 10px 60px;box-sizing: border-box}
+#dia_B>ul>li{width: 130px;height: 130px;background-color: #fff;float: left;
+margin-right: 130px;margin-bottom: 15px;}
+#dia_B>ul>li.last{margin-right: 0;}
+
+/*space_A 제품 과 그 아이들 끝!!*/
+
+
+
+/*4rd 사이드메뉴!!!========================*/
+#contentBox_04 {width: 978px; height: 140px;background-color:#ccc;}
+
+/*4rd 제품들 값*/
+#sideBox {width: 215px;height: 140px; background-color: #fff;float: left;} 
+#sideBox>ul {width: 100%; height: 100%; background-color: #fa8; padding-left: 10px;
+padding-top: 15px; box-sizing: border-box}
+#sideBox>ul>li {width: 190px;height: 50px; background-color: #fff;margin-bottom: 10px;}
+.clover_02 {width: 190px;height: 50px;background-color: #666;}
+.littleBox {width: 40px;height: 40px; float: right;background-color: #333;
+margin: 5px;}
+
+#sideArea {width: 763px;height: 140px;float: left;padding: 15px;box-sizing: border-box}
+#sideArea>ul {width: 100%;height: 100%;}
+#sideArea>ul>li {float: left;background-color: #666; }
+#clover_A {width: 20%;height: 50px;margin-right: 20px; margin-bottom: 12px;}
+#clover_B {width: 40%;height: 50px;margin-right: 20px; margin-bottom: 12px;}
+#clover_C {width: 31.5%;height: 50px;margin-right: 0; margin-bottom: 12px;}
+#clover_D {width: 70%;height: 50px;margin-right: 20px; margin-bottom: 12px;}
+#clover_E {width: 26%;height: 50px;margin-right: 0px; margin-bottom: 12px;}
+
+
+
+/*4rd 제품 값 설정 끝 !!!!!!!!!!!!!!!!!!!!!=====================================*/
+
+/*5rd 제품광고!! 우선 5박스는 탑미드바텀 세가지로 박스 구성. 그안에 구성박스들을 생성하며 진행할것임*/
+#contentBox_05 {width: 978px; height: 700px; background-color: #888;}
+
+    #first_Box {width: 978px;height: 100px;/*background-color: #f9a;*/padding: 20px;box-sizing: border-box} 
+
+/*첫박스 틀*/
+
+#first_Box>ul {width: 400px; height: 100px; /*background-color: #ccc;*/ float: left;}
+.l_butten_01 {width: 100px;height: 45px;background-color: #444;float: left;margin-top: 2.5px;}
+.r_butten_02 {width: 250px;height: 30px;background-color: #444;float: left;margin: 10px;
+margin-left: 20px;}
+#first_Box>ol {width: 160px;height: 45px; /*background-color: #f9a;*/float: right;}
+#first_Box>ol>li {width: 60px;height: 45px; background-color: #444;float: right;
+margin-left: 18px;}
+    /*5rd_first_Box 완료=====================================*/
+
+
+/*5rd_second_Box 시작!!*/
+#second_Box { width: 978px; height: 450px; /*background-color: #aaa;*/padding: 30px; box-sizing: border-box}
+#second_Box>ul {width: 80%; height: 100%; /*background-color: #aaa;*/margin-left: 100px;}
+#second_Box>ul>li {width: 150px;height: 150px; background-color: #fff;float: left;margin-right: 40px;margin-bottom: 60px;}
+#second_Box>ul>li.key_5rdbox {margin-right: 0;}
+
+/*5rd_second_Box 완료======================================*/
+
+#thrid_Box {width: 978px; height: 150px; background-color: #ccc;padding-top: 30px;
+padding-left: 350px; box-sizing: border-box}
+
+#thrid_Box>ul {width: 280px;height: 40px; background-color: #666;}
+#thrid_Box>ul>li {width: 40px;height: 40px; background-color: #fff;float: left;margin-right: 8px;}
+#thrid_Box>ul>li.hidden_box06 {margin: 0;}
+
+/*5rd_thrid_Box- scrll 완료!!===========================*/
+
+/*5rd Content_Box_o5 완료!!!!!!!!!!!!!!!!!!!!!!!!!============================*/
+
+
+#adressBox_06 {width: 978px; height: 150px;
+    background-color: #fa8;}
+#adressBox_06>ul {width: 730px;height: 100px; /*background-color: #777*/;margin-top: 25px;
+margin-left: 130px;}
+
+
+/*
+#adressBox_06>ul.adress_01 {width: 100px;height: 100px;background-color: #fff;float: left;}
+#adressBox_06>ul.adress_01 {width: 600px;height: 100px;background-color: #fff;float: left;}
+*/
+#adressBox_06>ul>li {width: 100px;height: 100px; background-color: #fff;float: left;margin-right: 15px;}
+#adressBox_06>ul>li.B_box {width: 600px; height: 100px;margin: 0;}
+
+
+
+/*그래 끝났어!!!*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

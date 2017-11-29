@@ -1,0 +1,818 @@
+@charset "utf-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+pre {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol,
+li,
+dt,
+dd,
+dl {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f2e;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+img {
+    border: 0;
+}
+
+header,
+section,
+footer,
+aside,
+article,
+nav,
+main,
+figure {
+    display: block;
+}
+
+/*common============================*/
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*design=========================================*/
+
+#wrap {
+    width: 1000px;
+    height: 0 auto;
+    background-color: #f06;
+    margin: 0 auto;
+}
+
+/*1lv 전체 틀!============================*/
+
+#header_Box {
+    width: 1000px;
+    height: 500px;
+    background-color: #555;
+}
+
+/*1rd Box----*/
+
+#unb_Area_01 {
+    width: 1000px;
+    height: 100px;
+    background-color: #fff;
+    float: left;
+}
+
+h1 {
+    width: 150px;
+    height: 100px;
+    background-color: #f09;
+    float: left;
+    margin-left: 10px;
+}
+
+/*=========================================로고*/
+
+#unb_Area_01 ul {
+    width: 700px;
+    height: 100px;
+    /*background-color: #fff;*/
+    float: right;
+    margin-top: 25px;
+}
+
+#unb_Area_01 ul > li {
+    width: 60px;
+    height: 50px;
+    background-color: #f09;
+    float: left;
+    margin-right: 5px;
+}
+
+#unb_Area_01 ul > li.add {
+    width: 300px;
+    height: 50px;
+    background-color: #f90;
+}
+
+/*로고 우측 로그인관련 메뉴들 설정=====================================*/
+
+#gnb_Area_01 {
+    width: 1000px;
+    height: 400px;
+    background-color: #555;
+    float: left;
+}
+
+#gnb_Title_01 {
+    width: 600px;
+    height: 50px;
+    background-color: #f09;
+    float: left;
+    margin-top: 70px;
+    margin-left: 200px;
+}
+
+/*1박스 제목*/
+
+#gnb_Title_detail_01 {
+    width: 500px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+/*1박스 제목의 부제*/
+
+#gnb_Box_01 {
+    width: 900px;
+    height: 80px;
+    background-color: #f90;
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+/*1박스 서치 영역*/
+
+#gnb_Box_01 ul {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+#gnb_Box_01 ul > li {
+    height: 50px;
+    float: left;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#gnb_Box_01 ul > li.name_01 {
+    width: 300px;
+    margin-left: 10px;
+}
+
+#gnb_Box_01 ul > li.name_02 {
+    width: 200px;
+}
+
+#gnb_Box_01 ul > li.name_03 {
+    width: 15px;
+}
+
+#gnb_Box_01 ul > li.name_04 {
+    width: 200px;
+}
+
+#gnb_Box_01 ul > li.down {
+    width: 15px;
+}
+
+#gnb_Box_01 ul > li.name_06 {
+    width: 100px;
+    margin-right: 0;
+}
+
+/*1박스 서치영역 상세항목*/
+
+/*1rd Box finish================================================*/
+
+#banner_Box {
+    width: 1000px;
+    height: 650px;
+    background-color: #888;
+}
+
+/*2rd Box----*/
+
+#gnb_Area_02 {
+    width: 1000px;
+    height: 130px;
+    background-color: #fff;
+    float: left;
+}
+
+#gnb_Area_02 div ul {
+    width: 100px;
+    height: 100px;
+    background-color: #f09;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#gnb_Area_02 div ul.box_01 {
+    margin-left: 27px;
+}
+
+#gnb_Area_02 div ul.box_08 {
+    margin-right: 0px;
+}
+
+#gnb_Area_02 div .one_name {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-left: 23px;
+}
+
+.one_sub {
+    width: 70px;
+    height: 30px;
+    background-color: #fff;
+    margin-top: 7px;
+    margin-left: 13px;
+}
+
+/*2rd Box 상단메뉴 8개 박스 완료=============================*/
+
+#Area_title_02 {
+    width: 1000px;
+    height: 200px;
+    background-color: #777;
+    float: left;
+}
+
+#title_02 {
+    width: 600px;
+    height: 60px;
+    background-color: #f09;
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+#subtitle_02 {
+    width: 500px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+/*2rd Box 제목 / 부제목 완료===============*/
+
+#city_Area_02 {
+    width: 1000px;
+    height: 350px;
+    background-color: #777;
+    float: left;
+    padding-top: 25px;
+    padding-left: 90px;
+    box-sizing: border-box
+}
+
+#thrid_Box_a {
+    width: 400px;
+    height: 300px;
+    background-color: #f90;
+    float: left;
+    margin-right: 20px;
+}
+
+#thrid_Box_b {
+    width: 400px;
+    height: 300px;
+    /*background-color: #fff;*/
+    float: left;
+}
+
+#contury li {
+    width: 190px;
+    height: 140px;
+    background-color: #f90;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#contury li.two_Cony {
+    margin-right: 0;
+}
+
+/*2rd Box 하위 5개 박스 완료==============================*/
+
+/*2rd Box finish=========================================*/
+
+#container_Box {
+    width: 1000px;
+    height: 600px;
+    background-color: #555;
+}
+
+/*3rd Box------*/
+
+#Area_title_03 {
+    width: 1000px;
+    height: 200px;
+    background-color: #ccc;
+    float: left;
+}
+
+#title_03 {
+    width: 600px;
+    height: 60px;
+    background-color: #f09;
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+#subtitle_03 {
+    width: 500px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+/*3rd Box 제목 / 부제목 완료 ================================*/
+
+#best_Area_03 {
+    width: 1000px;
+    height: 450px;
+    background-color: #ccc;
+    float: left;
+}
+
+#content_city_03 {
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    float: left;
+    margin-left: 25px;
+}
+
+/*<!--박스 첫번째의 큰 틀-->*/
+
+.city_03 {
+    width: 300px;
+    height: 150px;
+    background-color: #f09;
+    float: left;
+}
+
+/*-박스 안의 첫번째 칸*/
+
+.top_03 {
+    width: 150px;
+    height: 30px;
+    background-color: #f09;
+    margin: 20px;
+    float: left;
+}
+
+/*- 박스 안 두번째 줄 */
+
+.middle_03 {
+    width: 250px;
+    height: 50px;
+    background-color: #f09;
+    margin: 20px;
+    float: left;
+}
+
+/* 박스 안 새번째 박스*/
+
+.bottom_03 {
+    width: 100px;
+    height: 25px;
+    background-color: #f09;
+    float: right;
+    margin-right: 30px;
+}
+
+/* 박스 안 네번째 줄*/
+
+/*3rd Box finish============================================*/
+
+#finder_Box {
+    width: 1000px;
+    height: 400px;
+    background-color: #888;
+}
+
+/*4rd Box---*/
+
+#Area_title_04 {
+    width: 1000px;
+    height: 200px;
+    background-color: #fff;
+    float: left;
+}
+
+/*4rd box 틀*/
+
+#title_04 {
+    width: 600px;
+    height: 60px;
+    background-color: #f09;
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+/*4rd Box 제목*/
+
+#subtitle_04 {
+    width: 500px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+/*4rd Box 부제*/
+
+#find_box_Area_04 {
+    width: 1000px;
+    height: 250px;
+    background-color: #fff;
+    float: left;
+}
+
+/*4rd Box 하위 3개 설정박스*/
+
+#work_box_04 {
+    width: 300px;
+    height: 180px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 24px;
+}
+
+/*4rd Box 3개박스 틀*/
+
+.work_04 {
+    width: 100px;
+    height: 60px;
+    background-color: #f09;
+    float: left;
+    margin-top: 15px;
+    margin-left: 100px;
+}
+
+/*4rd 안에 1박스*/
+
+.work_title_04 {
+    width: 200px;
+    height: 20px;
+    background-color: #f09;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+/*4rd 안에 2박스*/
+
+.work_detail_04 {
+    width: 250px;
+    height: 40px;
+    background-color: #f09;
+    float: left;
+    margin-top: 8px;
+    margin-left: 25px;
+}
+
+/*4rd 안에 3박스*/
+
+/*4rd Box finish========================================*/
+
+#rest_Box {
+    width: 1000px;
+    height: 200px;
+    background-color: #555;
+}
+
+/*5rd Box---*/
+
+#browse_Box {
+    width: 1000px;
+    height: 100px;
+    background-color: #555;
+    float: left;
+}
+
+#title_05 {
+    width: 600px;
+    height: 50px;
+    background-color: #f09;
+    float: left;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+/*5rd Box 제목*/
+
+/*5rd Box finish=============================*/
+
+#team_Box {
+    width: 1000px;
+    height: 300px;
+    background-color: #888;
+}
+
+/*6rd Box*/
+
+#team_title_06 {
+    width: 1000px;
+    height: 200px;
+    background-color: #ccc;
+    float: left;
+}
+
+#title_06 {
+    width: 600px;
+    height: 60px;
+    background-color: #f09;
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+/*6rd Box 제목*/
+
+#subtitle_06 {
+    width: 500px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+/*6rd Box 부제*/
+
+#user_Box_06 {
+    width: 1000px;
+    height: 150px;
+    background-color: #ccc;
+    float: left;
+}
+
+/*6rd box하위박스 틀*/
+
+#user_picture_06 {
+    width: 900px;
+    height: 100px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 50px;
+}
+
+/*6rd Box 하위박스 세부설정 완료*/
+
+/*6rd Box finish==========================*/
+
+#tip_article_Box {
+    width: 1000px;
+    height: 600px;
+    background-color: #555;
+}
+
+/*7rd Box*/
+
+#tna_Box_title_07 {
+    width: 1000px;
+    height: 200px;
+    background-color: #777;
+    float: left;
+}
+
+#title_07 {
+    width: 600px;
+    height: 60px;
+    background-color: #f09;
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+
+/*7rd Box 제목*/
+
+#subtitle_07 {
+    width: 500px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+/*7rd Box 부제===*/
+
+#city_picture_Box_07 {
+    width: 1000px;
+    height: 450px;
+    background-color: #777;
+    float: left;
+}
+
+#city_picture_Box_07 > div.specil_07 {
+    margin-left: 50px;
+}
+
+/*마진 강제로 주는 명령어 기억하자! 부모>자식.클라스*/
+
+#pictureBox_07 {
+    width: 200px;
+    height: 350px;
+    background-color: #fff;
+    float: left;
+    margin-left: 30px;
+}
+
+/*7rd 하위박스 4개 생성*/
+
+.top_Box_07 {
+    margin: 5px;
+    width: 190px;
+    height: 150px;
+    background-color: #f09;
+    float: left;
+}
+
+.mid_Box_07 {
+    width: 190px;
+    height: 50px;
+    background-color: #f9a;
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.bot_Box_07 {
+    width: 190px;
+    height: 90px;
+    background-color: #f9a;
+    float: left;
+    margin: 5px;
+}
+
+/*7rd 하위박스 세부설정 완료======================*/
+
+#what_07 {
+    width: 150px;
+    height: 30px;
+    background-color: #f9a;
+    float: left;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+/*7rd 가장 아래에 next 바 */
+
+/*7rd Box finish=====================================*/
+
+#aside_Box {
+    width: 1000px;
+    height: 100px;
+    background-color: #888;
+}
+
+/*8rd Box*/
+
+#left_Area_08 {
+    width: 500px;
+    height: 100px;
+    background-color: #ccc;
+    float: left;
+}
+
+#area_08_A {
+    width: 300px;
+    height: 30px;
+    background-color: #f90;
+    float: left;
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+#right_Area_08 {
+    width: 500px;
+    height: 100px;
+    background-color: #ccc;
+    float: left;
+}
+
+#area_08_B {
+    width: 300px;
+    height: 30px;
+    background-color: #f90;
+    float: left;
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+/*8rd 쓰잘대기없는 박스 두개 뭔지 모르겠지만 완료*/
+
+/*8rd Box finish=================================*/
+
+#footer_Box {
+    width: 1000px;
+    height: 400px;
+    background-color: #555;
+}
+
+/*9rd Box*/
+
+#adress_Area_09 {
+    width: 1000px;
+    height: 400px;
+    background-color: #888;
+}
+
+#footerBox_09 {
+    width: 220px;
+    height: 180px;
+    background-color: #888;
+    float: left;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.categori_09 {
+    width: 120px;
+    height: 40px;
+    background-color: #f09;
+    float: left;
+}
+
+.text_09 {
+    width: 220px;
+    height: 100px;
+    background-color: #f9a;
+    float: left;
+    margin-top: 40px;
+}
+
+#footerBox_09.joker_09 {
+    background-color: #f9a;
+}
+
+/*9rd Box 카테고리 4개 박스 만들고 그 안에 상세 박스 설정 완료*/
+
+#copyright_09 {
+    width: 1000px;
+    height: 50px;
+    background-color: #fff;
+}
+
+#lastpang_09 {
+    width: 250px;
+    height: 30px;
+    background-color: #f90;
+    float: left;
+    margin-top: 7px;
+    margin-left: 50px;
+}
+
+/*9rd Box 마지막 맨 아래에 라스트 팡팡!!! 3개  끝=================================================================================================================================================================================*/
+
+/*9rd Box finish============================*/

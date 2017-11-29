@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/layout_test_03.css">
+    <title>Layout_test_03</title>
+</head>
+
+<body>
+    <!--1단계 : Wrap박스와 6개의 태그박스 생성-->
+    <!--2단계 : css에서 생성한 id박스의 수치 및 컬러 설정-->
+    <!--3단계 : header의 상세 영역 설정-->
+    <!--4단계 : 헤더영역의 히든닉네임과 모든 설정 완료-->
+
+    <div id="wrap">
+        <!--대장박스=========================================-->
+        <header id="headerBox">
+            <h1>Logo</h1>
+            <div id="right">
+                <h2 class="hidden">Log_in</h2>login
+            </div>
+            <nav id="gnbBox">
+                <h2 class="hidden">gnb_menuBox</h2>
+                <ul>
+                    <h3 class="hidden">Box name</h3>
+                    <li>abc_01</li>
+                    <li>abc_02</li>
+                    <li>abc_03</li>
+                    <li>abc_04</li>
+                    <li class="last">abc_05</li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--header===========================================-->
+
+
+        <section id="mainBox">
+            <h2 class="hidden">banner</h2>banner
+        </section>
+        <!--banner==============================================-->
+
+
+        <section id="sectionBox" class="content_box">
+            <h2 class="sub_title">first title</h2>
+            <!--title_01========================-->
+            <ul class="sub_list clearfix">
+                <li>list_01</li>
+                <li>list_02</li>
+                <li>list_03</li>
+                <li class="last">list_04</li>
+            </ul>
+        </section>
+        <!--첫번째 컨텐츠!!-->
+        <article id="articleBox" class="content_box">
+            <h2 class="sub_title">two_title</h2>
+            <!--title_02========================-->
+            <ul class="sub_list clearfix">
+                <li>list_01</li>
+                <li>list_02</li>
+                <li>list_03</li>
+                <li class="last">list_04</li>
+            </ul>
+        </article>
+
+        <!--여기까지 title_02-==========================================-->
+
+        <aside id="asideBox" class="content_box">
+            <h2 class="sub_title">three_title</h2>
+
+            <!--title_03 제목만=====================================-->
+
+            <div id="news">
+               <h3 class="hidden">news</h3>
+                <ul>
+                    <li>lis_01</li>
+                    <li class="last">lis_02</li>
+                </ul>
+            </div>
+            <!--좌측 상자 두개======================================-->
+
+
+            <div id="contents">
+               <h3 class="hidden">contents</h3>
+                <div id="content_01">
+                    <h4>content_01</h4>
+                </div>
+
+                <div id="content_02">
+                    <ul>
+                        <li>c_list_01</li>
+                        <li>c_list_02</li>
+                        <li>c_list_03</li>
+                        <li class="last">c_list_04</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <!--우측박스 !!!============================-->
+        <footer id="footerBox">
+            <h2 id="logoBox">logoBox</h2>
+            <div id="dubleBox">
+                <div id="top_dubleBox">top_dubleBox</div>
+                <address id="bottom_dubleBox">bottom_dubleBox</address>
+            </div>
+            <div id="treeBox">treeBox</div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
