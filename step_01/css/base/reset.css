@@ -1,0 +1,93 @@
+
+ /* reset.css */
+ /* variable:color, size, font */
+ 
+ /*
+  color: 명도대비 기준으로 제작
+  -primary: #d07
+  -main : #faa
+ -point :
+ -font1 : #333
+ -font2 : #777
+ -font3 : #fff
+ -link : #d07
+ -sub1 :
+ -sub2 :
+ -white : #fdfdfd
+ -gray1 : #333
+ -gray2 : #777
+ -black : #171717
+ */
+ /* 
+ size: 접근성 크기의 내용을 기준
+  *인쇄의 경우 기준의 폰트크기는 : 9pt, 웹의 경우는 12pt => 영문, 그래픽이미지일 경우*
+ -primary : 16px; ==1rem;
+ -h1(bold) : 24pt ==> 2rem
+ -h2(bold) : 22pt ==> 1.8333333rem
+ -h3(bold) : 20pt ==> 1.66667rem
+ -h4(bold) : 18pt ==> 1.5rem
+ -h5(bold) : 16pt ==> 1.333333rem
+ -h6(bold) : 14pt ==> 1.166667rem 
+ -big1 : 30pt ==> 2.5rem
+ -big2 : 27pt ==> 2.25rem
+ -narmal : 12pt ==> 1rem
+ */
+ 
+ /* 
+ font:
+ -english : "myriad pro" , "apple gothic" , arial
+ -korean : gothic, nanumGothic, dotum
+ -basic : sans-serif
+ 
+ *sans-serif 가 고딕임*
+ 
+ border : 
+ -thin :  border:1px solid #333
+ -normal: border: 2px solid #777
+ -bold :  border: 5px solid #d07
+ 
+ responsive:
+ -mobileV : 
+ moobileH : 
+ -table :
+ -pc : 
+ -pcfull : 
+ 
+ */
+ 
+ /* :root{font-size:10px;} 강제 명령 태그*/
+ 
+ /* base */
+ 
+ html,body {margin:0; padding:0; color:#333; font-size:16px; font-size:1rem;}
+ h1,h2,h3,h4,h5,h6,p,pre,div,ul,ol,li,dt,dl,
+ table,thead,tbody,tfoot,tr,th,td,
+ form,fieldset,legend,input,textarea,select,button,
+ a, img {
+     margin:0; padding:0; border:0; outline:0;
+ color:inherit;/* 부모의 컬러속성을 그대로 따라가는 명령어이다. */
+ font-size:inherit;
+ 
+ /* 서체 start */
+ font-family: "apple gothic" , "myriad pro" , arial, gothic, nanumGothic, dotum, sans-serif;}
+ 
+ address,em,wbr,strong,ins,del,abbr{font-style:normal; font-weight:normal;}
+ 
+ h1{font-size: 32px; font-size: 2rem;}
+ h2{font-size: 29px; font-size: 1.8125rem;}
+ h3{font-size: 28px; font-size: 1.75rem;}
+ h4{font-size: 24px; font-size: 1.5rem;}
+ h5{font-size: 22px; font-size: 1.375rem;}
+ h6{font-size: 20px; font-size: 1.25rem;}
+ 
+ ul,ol,li{list-style:none;}
+ a{text-decoration:none; color:#777;}
+ a:hover, a:active{text-decoration:underline; color:#d07;}
+ 
+button{cursor:pointer;}
+
+ /* ================================================================================================================ */
+ 
+ header,nav,article,section,footer,aside,main,figure,figcaption{display:block; color:inherit;}
+ 
+ 

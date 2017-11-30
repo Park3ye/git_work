@@ -1,0 +1,25 @@
+ /* common.css */
+ @charset "utf-8";
+ 
+ 
+ /* common.css */
+ 
+ .clearfix:after{content:" "; display:block; width:100%; height:0;clear:both;}
+ .clearfix::after{content:" "; display:block; width:100%; height:0; clear:both;}
+ 
+ .hidden_wrap a>span,
+ .hidden{display:block; width:0; height:0; position:absolute; z-index:-100; overflow:hidden;}
+ .hidden_wrap a{display:block; width:100%; height:100%;} /* 이렇게a박스에 속성과 사이즈를 부여하는게 일반적임
+ */
+ #warp .first{margin-left:0; border-left:0;}
+ #wrap .last{margin-right:0; border-right:0;}
+ #wrap .top{margin-top:0; border-top:0;}
+ #wrap .bottom{margin-bottom:0; border-bottom:0;}
+ 
+ 
+ /* accessibility.css */
+ 
+ a:focus, button:focus{outline:2px solid #d07;background-color: #d07; color:#fff;}
+ /* 모든 기준에서의 비율이 4.5:1 명도대비가 맞는지 확인해야 한다. 일반적 4.5는 무조건 넘어야 하고
+ 초록색은 보통 기준에 거의 미치지 못하기 때문에, 그걸 빼고 나머지를 최대한 4.5에 맞추려 노력해야한다.*/
+ 
