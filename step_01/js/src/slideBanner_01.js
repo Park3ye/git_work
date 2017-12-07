@@ -1,35 +1,66 @@
+// slideBanner_01.js
 
-// 즉시 실행 함수 (IIFE)
+// 즉시 실행 함수(IIFE)
 (function($){
-    // jQuery
-    $('.banner>ul>li').last().prependTo('.banner>ul'); /*  맨 뒤에거를 앞으로 이동시킨다. */
-    $('.banner>ul').css({marginLeft:'-100%'});
-    $('.banner').css({overflow:'hidden'});
+// jQuery
+var banner = $('.banner');
+var bannerUl = banner.children('ul');//$('.banner>ul');
+var bannerLast = bannerUl.children('li');//$('.banner>ul>li');
+
+bannerLast.last().prependTo(bannerUl);
+bannerUl.css({marginLeft:'-100%'});
+banner.css({overflow:'hidden'});
+
+
+  // $('.banner>ul>li').last().prependTo('.banner>ul');
+  // $('.banner>ul').css({marginLeft:'-100%'});
+  // // $('.banner').css({overflow:'hidden'});
+
+var leftBtn = $('.btn').children('button').first();
+var rightBtn = $('.btn').children('button').last();
+
+leftBtn.on('click', function(e){
+  e.preventDefault(); //>?
+  bannerUl.stop(false,true).animate({marginLeft:0}, function(){
+  bannerLast = bannerUl.children('li').last();
+  bannerLast.prependTo(bannerUl);
+  bannerUl.css({marginLeft:0});
+  });
+}); //leftBtrn 클릭
+
+rightBtn.on('click', function(event){
+  event.preventDefault(); //??
+ 
+  bannerUl.stop(false,true).animate({marginLeft:'-200%'}, function(){
+    bannerLast = bannerUl.children('li').first();
+    bannerLast.appendTo(bannerUl);
+    bannerUl.css({marginLeft:'-100%'});
+  });
+}); //rightBtn 클릭
+
+
 })(this.jQuery);
 
-//함수의 종류
+// 함수의 종류
+/* 
+1. 함수 선언식: 
+ - 먼저 호출하고, 나중에  함수기능을 작성해도 문제없이 동작
+ - 초기 작업시, 가장 큰 범위의 작업
+ Fn();
+ function Fn(){}
 
-// 함수 선언식 : 
-// 먼저 호출하고, 나중에 함수기능을 작성해도 실햄됨 (순서 상관없이 진행 가능,하지만 한번 사용하면 더 사용할 수 없음
-//  초기 작업시, 가장 큰 범위의 작업 )
-// function Fn(){}
-// Fn();
+2. 함수 표현식:
+ - 먼저 작업후에 호출해야만 동작; 
+ - 큰범위의 함수 내부에서 동작처리할때 
+ var Fun = function(){ };
+ Fun();
 
-// 함수 표현식 :
-// 먼저 작업 후에 호출해야만 동작 가능
-//  ex) Fun();
-// var Fun = function (){};                  <X>
+3. 즉시 실행함수(익명함수)
+- 별도의 호출이 필요 없을때 사용
+- 외부의 접근을 강제로 막을때 
+ ( funtion($){} )(this.jQuery);
+ ( funtion(){}() );
 
-                                        //  N O N O !!
 
-// var Fun = function(){};
-// Fun();                                    <O>
+*/
 
-                                        // YES YES YES !!
-
-// 즉시 실행함수(익명함수)
-// 별도의 호출이 필요 없을때 사용
-// 외부의 접근을 강제로 막을떄
-// ( funtion(){})(this.jQuery);
-// 또는
-// ( fintion(){}() );

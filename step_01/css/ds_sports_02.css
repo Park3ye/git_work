@@ -15,9 +15,8 @@ a{text-decoration: none; color:#f09;}
  .hidden{width:0;height:0; overflow:hidden;}
 
  /* common.css */
-
- #wrap {width:960px; height:0 auto; background-color:#555; margin:0 auto;}
- #head_Box {width:960px; height:200px; background-color:#888;}
+ #wrap {width: 960px;height: 0 auto; background-color: #555; margin: 0 auto;}
+  #head_Box {width:960px; height:200px; background-color:#888;}
  
  h1 {width:150px; height:150px; background-color:#f00; float:left;margin-top:50px;
     margin-left:80px; position:absolute;}
@@ -36,8 +35,7 @@ margin :2.5px;}
     /* image 삽입 */
     
     /* 1st headBox 완료 ! */
-
-    /* 2st bannerBox 시작 ! */
+      /* 2st bannerBox 시작 ! */
 
     #banner_Box {width:100%; height:400px; background-color:#fff;}
     /* 2st banner image 삽입 */
@@ -46,23 +44,33 @@ margin :2.5px;}
 .gnb_title {width:100px; height:50px; background-color:#f09;
 float:left; margin-left:10px;}
 .gnb_title_specil  {width:100px; height:50px; background-color:#f09;
-    float:left; margin-left:250px;}
+    float:left; margin-left:250px;background-color: #f00;}
+
     
     /* 2st 메뉴 박스 4개 설정 완료! */
 
-#content_Box {width: 100%; height: 1000px; background-color: #555;}
-#c_Area_mid {width: 60%; height: 100%; background-color: #999; margin: auto;}
-#c_Area_mid ul {width: 100%; height: 100%;padding: 1rem;box-sizing:border-box;}
-#c_Area_mid>ul>li:nth-child(1){width: 100%; height: 30%; background-color: #fff;
-}
-#c_Area_mid>ul>li:nth-child(2){width:100%; height: 68%; background-color: #fff;
-margin-top: 3%;}
-/* 3rd 하위 컨텐츠 박스 완료*/
+    #intro_Box_01 {width: 100%; height: 0 auto; background-color: #555;}
+    .I_Box_01 {width: 60%;height: 530px; background-color: #888; margin: 0 auto;
+        padding: 1rem; box-sizing: border-box;}
+        .I_Box_01 li:nth-child(1) {width: 40%;height: 500px; background-color: #fff;float: left;}
+        .I_Box_01 li:nth-child(2) {width: 55%;height: 50px; background-color: #fff;float: left;margin-left: 1rem;}
+        .I_Box_01 li:nth-child(3) {width: 55%;height: 430px; background-color: #fff;float: left;margin-left: 1rem;
+            margin-top: 1rem;}
+/*intro_Box_01 완료*/
 
+/*intro_BOx_02 시작! */
+.I_Box_02 {width: 60%;height: 470px; background-color: #888;margin: 0 auto;
+padding: 1rem;box-sizing: border-box;}
+.I_Box_02 li:nth-child(1) {width: 40%; height: 420px; background-color: #fff; float: left;}
+.I_Box_02 li:nth-child(2) {width: 55%; height: 50px; background-color: #fff;float: left; margin-left: 1rem;}
+.I_Box_02 li:nth-child(3) {width: 55%; height: 350px; background-color: #fff; float: left;margin-left: 1rem;
+margin-top: 1rem;}
+/*intro_Box_02 완료 ! */
+
+/*footer 시작 */
 #footer_Box {width: 60%; height: 150px; background-color: #aaa;margin: auto;}
 #adress_Area {width: 100%;height: 150px;}
 #adress_Area ul {width: 100%;height: 150px; padding: 1rem;box-sizing: border-box;
     background-color: #777;}
     #footer_Box>div>ul>li {width: 48%; height: 120px; background-color: #fff;float: left;}
     .ul_Box_02 {margin-left: 4%;}
-    
