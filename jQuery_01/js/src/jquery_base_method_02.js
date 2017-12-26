@@ -1,16 +1,16 @@
-// (function($){
-//   // jQuery Start
-//   var gnbBtn = $('.gnb_btn');
-//   var gnbUl = $('#gnb').children('ul');  /*변수를 정의(지정_)*/
+(function($){
+  // jQuery Start
+  var gnbBtn = $('.gnb_btn');
+  var gnbUl = $('#gnb').children('ul');  /*변수를 정의(지정_)*/
 
-//   gnbBtn.on('click', function(evt){
-//     evt.preventDefault();
+  gnbBtn.on('click', function(evt){
+    evt.preventDefault();
   
 //   gnbUl.toggle();
-//   gnbUl.slideToggle();
+  gnbUl.slideToggle();
 //   gnbUl.fadeToggle();
   
-// });
+});
 
 //   jQuery End
 // })(this.jQuery);
@@ -21,32 +21,34 @@
 // 두번째는 슬라이딩하며 내앞에 나타남 slide down
 // 세번째는 스리슬쩍 슬며시 나타남 fade in
 
-(function($){
+// (function($){
 
-  var view01 = $('#bannerBox>.view>.view_01');
-  var view02 = $('#bannerBox>.view>.view_02');
-  var view03 = $('#bannerBox>.view>.view_03');
-  var view04 = $('#bannerBox>.view>.view_04');
-  var view05 = $('#bannerBox>.view>.view_05');
-  var view06 = $('#bannerBox>.view>.view_06');
-  var view07 = $('#bannerBox>.view>.view_07');
-  var view08 = $('#bannerBox>.view>.view_08');
+var view = $('.view');
+
+  var view01 = view.children('li').eq(0);
+  var view02 = view.children('li').eq(1);
+  var view03 = view.children('li').eq(2);
+  var view04 = view.children('li').eq(3);
+  var view05 = view.children('li').eq(4);
+  var view06 = view.children('li').eq(5);
+  var view07 = view.children('li').eq(6);
+  var view08 = view.children('li').eq(7);
 
 var btn = $('.btn');
 var btnLi = btn.children('li');
 
-  var btn01 = $('#bannerBox>.btn>.btn_01');
-  var btn02 = $('#bannerBox>.btn>.btn_02');
-  var btn03 = $('#bannerBox>.btn>.btn_03');
-  var btn04 = $('#bannerBox>.btn>.btn_04');
-  var btn05 = $('#bannerBox>.btn>.btn_05');
-  var btn06 = $('#bannerBox>.btn>.btn_06');
-  var btn07 = $('#bannerBox>.btn>.btn_07');
-  var btn08 = $('#bannerBox>.btn>.btn_08');
-  var btn09 = $('#bannerBox>.btn>.btn_09');
-  var btn10 = $('#bannerBox>.btn>.btn_10');
-  var btn11 = $('#bannerBox>.btn>.btn_11');
-  var btn12 = $('#bannerBox>.btn>.btn_12');
+  var btn01 = $(btnLi.eq(0).children('button');
+  var btn02 = $(btnLi.eq(1).children('button');
+  var btn03 = $(btnLi.eq(2).children('button');
+  var btn04 = $(btnLi.eq(3).children('button');
+  var btn05 = $(btnLi.eq(4).children('button');
+  var btn06 = $(btnLi.eq(5).children('button');
+  var btn07 = $(btnLi.eq(6).children('button');
+  var btn08 = $(btnLi.eq(7).children('button');
+  var btn09 = $(btnLi.eq(8).children('button');
+  var btn10 = $(btnLi.eq(9).children('button');
+  var btn11 = $(btnLi.eq(10).children('button');
+  var btn12 = $(btnLi.eq(11).children('button');
   
   // 변수 지정 끝 , 명령어 실행 ==========
 

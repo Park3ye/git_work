@@ -1,0 +1,18 @@
+/* imageBox.css */
+/* #aboutBox{} */
+#imageBox{width: 1164px; height: auto; 
+          background-color: #fff; margin: 0 auto; padding-top : 105px;box-sizing:border-box;}
+
+.content_box{width: 1164px; height: auto; 
+          background-color: #fff; margin: 0 auto; padding-top : 105px;box-sizing:border-box;}
+
+          .title_area{width: 564px; height: 105px; margin: 0 auto; background-color: #cca; margin-bottom: 45px; }
+
+          .content_area{width: 100%; height: auto;}        
+          /*.content_area:after{content:" "; display: block; clear:both;}*/
+          .content_area>div{width: 364px; margin-right: 36px; float: left; 
+            background-color: #0af; }
+          .content_area>div:last-of-type{margin-right: 0;}
+#imageBox>.content_area>div{height:405px;}
+
+/* //imageBox.css */

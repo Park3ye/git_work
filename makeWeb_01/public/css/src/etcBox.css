@@ -1,0 +1,19 @@
+/* etcBox.css */
+
+#etcBox{width: 1164px; height: 330px; 
+         background-color: #fcc;
+         padding-left: 92px;padding-top:73px; padding-bottom: 108px; box-sizing:border-box;} 
+
+.etc_Area>div{width: 168px; height: 152px; background-color: #f83;
+             margin-right: 102px;float: left;}
+
+.etc_Area>div.etc_last{margin: 0;}
+
+
+
+
+
+
+
+
+/* //etcBox.css */

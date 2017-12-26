@@ -1,0 +1,16 @@
+/* newsBox.css */
+
+/* #newsBox{} */
+
+/*.content_box{}
+.title_area{}
+.content_area{
+.content_area>div{}
+.content_area>div:last-of-type{}
+
+공통범위로 image.css에서 설정됨
+
+*/
+#newsBox>.content_area>div{height: 270px;}
+
+/* //newsBox.css */

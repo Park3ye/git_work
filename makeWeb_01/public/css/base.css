@@ -1,0 +1,16 @@
+/* base.css */
+
+
+/*@import url();  html문서에서 link태그로 원하는 페이지를 불러올떄 하는것 처럼
+css문서에서 css파일을 불러올떄 쓰는 CSS태그명령어*/
+
+@import url("./src/wrap.css"); 
+@import url("./src/headBox.css"); 
+@import url("./src/bannerBox.css"); 
+@import url("./src/imageBox.css"); 
+@import url("./src/newsBox.css"); 
+@import url("./src/blogBox.css"); 
+@import url("./src/etcBox.css"); 
+@import url("./src/etc2Box.css"); 
+@import url("./src/footBox.css"); 
+

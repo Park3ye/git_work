@@ -1,0 +1,12 @@
+/* etc2Box.css */
+
+#etc2Box{width: 1164px; height: 300px;
+         background-color: #f59;
+         padding-top: 32px; padding-bottom: 45px;box-sizing: border-box;} 
+
+.etc2_Area{margin-left: 64px;}
+.etc2_Area>div{width: 102px;height: 225px; background-color: #1cc;
+  float:left;margin-right:132px; }
+  .etc2_Area>div.etc2_last{margin-right: 0;}
+
+/* //etc2Box.css */

@@ -1,0 +1,13 @@
+/* blogBox.css */
+
+#blogBox{background-color: #eee; padding: 90px 0;}    
+
+/*.content_box{}
+.title_area{}
+.content_area{
+.content_area>div{}
+.content_area>div:last-of-type{}*/
+
+#blogBox>.content_area>div{height: 420px;}
+
+/* //blogBox.css */
